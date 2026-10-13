@@ -112,6 +112,61 @@ main img {
   border-radius: 4px;
 }
 
+.ask-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 36px;
+}
+
+.ask-form label,
+.answer h2 {
+  font-weight: 700;
+}
+
+.ask-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 120px;
+  padding: 14px;
+  border: 2px solid #1a1a1a;
+  border-radius: 4px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font: inherit;
+  resize: vertical;
+}
+
+.ask-form button {
+  justify-self: start;
+  min-height: 46px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 4px;
+  background: #ff4343;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ask-form button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.status {
+  min-height: 1.6em;
+}
+
+.answer {
+  padding-top: 8px;
+  overflow-wrap: anywhere;
+}
+
+.answer h2 {
+  font-size: 1.2em;
+}
+
 .image-caption {
   font-style: italic;
   opacity: 0.6;

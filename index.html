@@ -19,10 +19,20 @@
 
     <div class="card border shadow">
       <h2>Ask me anything 👋</h2>
-      <p>Change this line to say what your AI answers questions about.</p>
+      <p>Write a question and get an answer from Sarvam AI.</p>
     </div>
 
-    <!-- Your agent will add the form and the answer here (Lecture 9, step 5) -->
+    <form id="ask-form" class="ask-form">
+      <label for="prompt">Your question</label>
+      <textarea id="prompt" name="prompt" rows="4" maxlength="10000" placeholder="What would you like to know?" required></textarea>
+      <button id="submit-button" type="submit">Get answer</button>
+    </form>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+    <section id="answer" class="answer" aria-labelledby="answer-heading" hidden>
+      <h2 id="answer-heading">Answer</h2>
+      <p id="answer-text"></p>
+    </section>
 
   </main>
 
